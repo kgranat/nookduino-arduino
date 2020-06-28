@@ -1,0 +1,30 @@
+# Nookduino Board Configuration
+#
+# For more information see:
+# - https://github.com/arduino/Arduino/wiki/Arduino-IDE-1.5---3rd-party-Hardware-specification
+# - https://github.com/arduino/Arduino/wiki/Arduino-Hardware-Cores-migration-guide-from-1.0-to-1.6
+#
+# Adapted from Adafruit boards.txt
+
+
+
+
+##############################################################
+nookduino.name=Nookduino
+nookduino.upload.tool=arduino:avrdude
+nookduino.upload.protocol=arduino
+nookduino.upload.maximum_size=30720
+nookduino.upload.maximum_data_size=2048
+nookduino.upload.speed=57600
+nookduino.bootloader.tool=arduino:avrdude
+nookduino.bootloader.low_fuses=0xFF
+nookduino.bootloader.high_fuses=0xDA
+nookduino.bootloader.extended_fuses=0x05
+nookduino.bootloader.unlock_bits=0x3F
+nookduino.bootloader.lock_bits=0x0F
+nookduino.bootloader.file=atmega/ATmegaBOOT_168_atmega328.hex
+nookduino.build.mcu=atmega328p
+nookduino.build.f_cpu=16000000L
+nookduino.build.board=AVR_NOOKDUINO
+nookduino.build.core=arduino:arduino
+nookduino.build.variant=arduino:standard
